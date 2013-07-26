@@ -3,12 +3,13 @@ layout: post
 category : tech
 tagline: "Задачка по Cyclomatic complexity"
 tags : [cyclomatic, complexity, java, javascript]
+excerpt: Ситуация, когда цикломатическая сложность *not always human intuitive*
 ---
 {% include JB/setup %}
-
 В репозитории [JSHint](https://github.com/jshint/jshint) наткнулся на интересную задачку.
 
 Даны две фукции:
+
 
 {% highlight javascript %}
 function(someVal) {
