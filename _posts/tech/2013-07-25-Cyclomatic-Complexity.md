@@ -2,7 +2,7 @@
 layout: post
 category : tech
 tagline: "Задачка по Cyclomatic complexity"
-tags : [cyclomatic, complexity, java, javascript]
+tags : [cyclomatic complexity, java, javascript]
 excerpt: Ситуация, когда цикломатическая сложность *not always human intuitive*
 ---
 {% include JB/setup %}
@@ -11,7 +11,7 @@ excerpt: Ситуация, когда цикломатическая сложн�
 Даны две фукции:
 
 
-{% highlight javascript %}
+```js
 function(someVal) {
     switch (someVal) {
         case 1:
@@ -24,9 +24,9 @@ function(someVal) {
             break;
     }
 }
-{% endhighlight %}
+```
 
-{% highlight javascript %}
+```js
 function(someVal) {
     if (someVal === 1 || someVal === 2 || someVal === 3) {
         doSomething();
@@ -34,7 +34,7 @@ function(someVal) {
         doSomethingElse();
     }
 }
-{% endhighlight %}
+```
 
 JSHint говорит, что СС для данных функций равны 4 и 2 соответственно.
 Задача - выяснить истину и поправить библиотеку.
