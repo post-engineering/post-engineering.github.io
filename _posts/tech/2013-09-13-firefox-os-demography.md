@@ -2,7 +2,7 @@
 layout: post
 category : tech
 tagline: "Firefox OS Users Demography"
-tags : Firefox OS
+tags : Firefox-OS
 excerpt: Демография пользователей Firefox OS
 ---
 
