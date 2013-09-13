@@ -9,6 +9,7 @@ excerpt: Стоит ли использовать Immutable Object в Java
 
 ##Хороший пример
 В Java может быть реализован так:
+
 ```java
 final class Unicorn {
 	private final String name;
@@ -30,6 +31,7 @@ final class Unicorn {
 
 Unicorn lady = new Unicorn("Lady Rainicorn", "rainbow");
 ```
+
 Теперь можем передавать наш объект между потоками, никто его не изменит. Звучит хорошо, если не доводить до фанатизма.
 
 ## История из жизни
@@ -70,6 +72,7 @@ Unicorn lady = new Unicorn("Lady Rainicorn", "rainbow");
 Java — язык в возрасте. Да, он позволяет создавать Immutable объекты. Однако, работать с ними не просто. Особенно с большими. Не хватает синтаксического сахара.  
 Вот пример паттерна на других ЯП  
 **Groovy:**
+
 ```groovy
 @Immutable
 final class Pony {
@@ -79,12 +82,16 @@ final class Pony {
 }
 new Pony(name = "Princess Celestia", color = "white", age = "70")
 ```
+
 **Scala:**
+
 ```scala
 case class Pony(name :String, color :String, age :Integer)
 new Pony(name = "Princess Celestia", color = "white", age = "70")
 ```
+
 **Java:**
+
 ```java
 public class ImutableCatSpecificationDataObject {
 
@@ -105,6 +112,7 @@ public class ImutableCatSpecificationDataObject {
     // -- getters omitted --
 }
 ```
+
 Попробуйте добавить в таком конструкторе новый параметр между ``name`` и ``color``, а затем поправить все его вызовы. Или удалить ``bar``. Представьте, каково приходится парням с конструкторами на 23 параметра, когда эти параметры добавляются, убираются, становятся опциональными или меняются местами.
 
 ##Выводы
