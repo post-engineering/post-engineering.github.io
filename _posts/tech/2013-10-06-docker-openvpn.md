@@ -28,7 +28,7 @@ CD сделал. Скоро напишу об этом.
 
 ## Code
 Начинаем. Для базы выберем образ убунты
-```shell
+```bash
 docker run -privileged -i -t ubuntu:precise /bin/bash # i - интерактивный режим. Попадаем в консоль
 apt-get install -y iptables wget # iptables - для openVpn; wget - чтобы скачать openVPN AS
 
@@ -53,7 +53,7 @@ exit
 
 Готово. Осталось сохранить контейнер.
 
-```shell
+```bash
 # Самый верхний ID - это наш
 docker ps -a
 
@@ -63,7 +63,7 @@ docker commit $ID -t borov/openvpn
 Образ готов.
 Запускаем
 
-```shell
+```bash
   docker run -d -privileged -p 1194:1194/udp -p 443:443/tcp -p 943:943/tcp -t borov/openvpn-server /bin/bash -c "service openvpnas start && tail -f /var/log/openvpnas.log"
 ```
 
