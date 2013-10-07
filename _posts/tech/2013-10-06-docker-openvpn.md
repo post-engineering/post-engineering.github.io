@@ -28,6 +28,7 @@ CD сделал. Скоро напишу об этом.
 
 ## Code
 Начинаем. Для базы выберем образ убунты
+
 ```bash
 docker run -privileged -i -t ubuntu:precise /bin/bash # i - интерактивный режим. Попадаем в консоль
 apt-get install -y iptables wget # iptables - для openVpn; wget - чтобы скачать openVPN AS
