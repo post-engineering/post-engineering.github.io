@@ -6,6 +6,8 @@ tags : [Reactor]
 excerpt: Ох, приехали. Даже в вакансии DB сегодня Я обнаружил "Experience in UI architecture (MVP, reactive programming)"
 ---
 ![Firefox OS](/images/reactor.png)  
+
+Ох, приехали. Даже в вакансии DB сегодня Я обнаружил "Experience in UI architecture (MVP, reactive programming)"
 Scala в содружестве с TypeSafe всетаки продвинули еще одно слово паразит в массы.  
 Теперь все, до чего дотрагиватется TypeSafe начинает называться Reactive. Даже курс на курсере решили назвать Reactive Programming.
 Cloud, Big Data..... теперь еще и Reactive. Ну ребята. Ну прекратите.  
