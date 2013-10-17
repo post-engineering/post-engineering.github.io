@@ -86,8 +86,9 @@ api.tapcat.net
 В этом случае, оказалось, что браузер срежет куки для домена `yourdomain.com`, но позволит проставить cookie для домена `api.tapcat.net`.
 Глубина поддоменов не учитывается и все работает даже для: `dev.api.tapcat.net; a.b.c.d.tapcat.net`.
 
-![cors-third-party-chrome](/images/cors-cookie-chrome)
-![cors-third-party-firefox](/images/cors-cookie-firefox)
+![cors-third-party-chrome](/images/cors-cookie-chrome.png)
+![cors-third-party-firefox](/images/cors-cookie-firefox.png)
+
 Получается, оно работает потому что текущий Origin содержится в данном домене!?
 
 # I need proof
