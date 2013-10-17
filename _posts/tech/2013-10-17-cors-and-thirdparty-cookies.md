@@ -92,8 +92,12 @@ api.tapcat.net
 Получается, оно работает потому что текущий Origin содержится в данном домене!?
 
 # I need proof
-Решение работает в современных браузерах. Данное поведение должно быть стандартизировано! Ищем стандарт!
-Нам подходят документы: [HTTP State Management Mechanism](https://www.rfc-editor.org/rfc/rfc6265.txt), [W3C CORS](http://www.w3.org/TR/cors/).
+Решение работает в современных браузерах. Данное поведение должно быть стандартизировано!  
+Ищем стандарт!
+Нам подходят документы: 
+* [HTTP State Management Mechanism](https://www.rfc-editor.org/rfc/rfc6265.txt)
+* [W3C CORS](http://www.w3.org/TR/cors/).
+
 Первый говорит, что есть такие third-party cookies, которые user agent может блокировать. А как отличить одни Cookie от других - не сказано. Однако, есть интересный параграф:
 
 ```
