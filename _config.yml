@@ -32,7 +32,7 @@ owner:
   name: Post-Engineering
   avatar: site-logo.png
   email:
-  disqus-shortname:
+  disqus-shortname: post-engineering
   twitter:
   facebook:
   github: http://post-engineering.com
@@ -43,7 +43,7 @@ owner:
   tumblr:
   google:
     plus:
-    analytics:
+    analytics: 'UA-42719171-1'
     verify:
     ad-client:
     ad-slot:
