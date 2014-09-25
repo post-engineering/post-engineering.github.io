@@ -1,10 +1,15 @@
 ---
 layout: post
-category : tech
-tagline: "Firefox OS phone"
-tags : [Firefox OS]
-excerpt: А вы знаете, что за красивые глаза Mozilla может подарить вам телефон на Firefox OS? Мне подарила!
+title: "Firefox OS phone"
+categories: blog
+excerpt: "А вы знаете, что за красивые глаза Mozilla может подарить вам телефон на Firefox OS? Мне подарила!"
+author: wonderbeat
+tags: [Firefox-OS]
+image:
+  feature: foxy-splash.png
+comments: true
+share: true
 ---
-![Firefox OS](/images/foxy-splash.png) 
-Сегодня с утра Я открыл почту и удивился. Mozilla пришлет мне телефон.  
+
+Сегодня с утра Я открыл почту и удивился. Mozilla пришлет мне телефон.
 Похоже, что следующее приложение для Firefox OS не за горами ;)

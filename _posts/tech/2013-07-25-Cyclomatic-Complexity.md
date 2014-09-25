@@ -1,17 +1,25 @@
 ---
 layout: post
-category : tech
-tagline: "Задачка по Cyclomatic complexity"
-tags : [cyclomatic complexity, java, javascript]
-excerpt: Ситуация, когда цикломатическая сложность *not always human intuitive*
+title: "Задачка по Cyclomatic complexity"
+categories: blog
+excerpt: "В репозитории [JSHint](https://github.com/jshint/jshint) наткнулся на интересную задачку."
+author: wonderbeat
+tags: [cyclomatic complexity, java, javascript]
+image:
+  feature: so-simple-sample-image-4.jpg
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+comments: true
+share: true
 ---
-{% include JB/setup %}
+
+
 В репозитории [JSHint](https://github.com/jshint/jshint) наткнулся на интересную задачку.
 
 Даны две фукции:
 
 
-```js
+~~~ js
 function(someVal) {
     switch (someVal) {
         case 1:
@@ -24,9 +32,9 @@ function(someVal) {
             break;
     }
 }
-```
+~~~
 
-```js
+~~~ js
 function(someVal) {
     if (someVal === 1 || someVal === 2 || someVal === 3) {
         doSomething();
@@ -34,7 +42,7 @@ function(someVal) {
         doSomethingElse();
     }
 }
-```
+~~~
 
 JSHint говорит, что СС для данных функций равны 4 и 2 соответственно.
 Задача - выяснить истину и поправить библиотеку.

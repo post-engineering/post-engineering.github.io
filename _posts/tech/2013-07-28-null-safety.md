@@ -1,23 +1,31 @@
 ---
 layout: post
-category : tech
-tagline: "Null safety"
-tags : [code smells]
-excerpt: Несколько лет назад видел такой подход к написанию кода. Думал, что больше не увижу.
+title: "Null safety"
+categories: blog
+excerpt: "Несколько лет назад видел такой подход к написанию кода. Думал, что больше не увижу."
+author: wonderbeat
+tags: [code smells]
+image:
+  feature: so-simple-sample-image-1.jpg
+  credit: WeGraphics
+  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+comments: true
+share: true
 ---
+
 Несколько лет назад видел такой подход к написанию кода. Думал, что больше не увижу. Ошибался.
 
 Есть в разработке такой термин, как null safety. Идеалогия борьбы такова: не допустить появление нулей (null).
 Ведь нули ведут нас к `NPE`, а `NPE` - это АйАйАй. Мне очень нравится подход Kotlin в данном направлении: [Kotlin Null Safety](http://confluence.jetbrains.com/display/Kotlin/Null-safety)
 
-```js
+~~~ js
 One of the most common pitfalls in Java programming is accessing a member of a null reference, that results in a NullPointerException,
-```
+~~~
 
 Но разговор сегодня о другой крайности.
 Итак, у нас есть метод:
 
-```java
+~~~ java
 String doSmth(String str, Integer times) {
 	String out = str;
 	for i in range(times) {
@@ -25,11 +33,11 @@ String doSmth(String str, Integer times) {
 	}
 	return out;
 }
-```
+~~~
 
 Что-то тут не так. А, да. Конечно! Что же будет, если одним из параметров придет null? Все же упадет! Решение!
 
-```java
+~~~ java
 String doSmth(String str, Integer times) {
 	if(times == null) {
 		return null;
@@ -40,7 +48,7 @@ String doSmth(String str, Integer times) {
 	}
 	return out;
 }
-```
+~~~
 
 Вот. Обезопасились. Теперь код будет работать.
 #Стоп
@@ -49,13 +57,13 @@ String doSmth(String str, Integer times) {
 
 А, ладно с контрактом. Давайте посмотрим на проблему с другой стороны. Дебаг. Он великолепен.
 
-```java
+~~~ java
 /**
  * Extracts digits from string
  * returns digits string or null if nothing found
  */
 @Nullable String getDigits(String str) {
-  return getDigitsInternal(str)  
+  return getDigitsInternal(str)
 }
 
 /**
@@ -80,7 +88,7 @@ public static void main() {
   String digits = getDigits(str);
   sendWithTcp(toUpperCase(doubleString(digits))); // <-- NPE in send() method
 }
-```
+~~~
 
 Стектрейс мы увидем на методе `sendWithTcp`. Ошибка была при вызове `doubleString`. Но `toUpperCase` проглатил ерунду на вход и выдал ерунду на выход.
 
