@@ -4,7 +4,7 @@ title: "Haskell hackathon"
 categories: blog
 excerpt: "Время приключений!"
 author: wonderbeat
-tags: [Github, Haskell, Time-Attack]
+tags: [Github, Haskell]
 image:
   feature: haskell_logo.gif
 comments: true

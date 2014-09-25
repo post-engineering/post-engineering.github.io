@@ -4,7 +4,7 @@ title: "AngularJS for Firefox OS"
 categories: blog
 excerpt: "Вот и приняли мое приложение в Файрфокс маркет. Теперь расскажу о подводных камнях."
 author: wonderbeat
-tags: [AngularJs, Firefox OS]
+tags: [AngularJs, Firefox-OS]
 image:
   feature: so-simple-sample-image-5.jpg
   credit: WeGraphics

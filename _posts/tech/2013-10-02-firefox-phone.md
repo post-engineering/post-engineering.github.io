@@ -2,7 +2,7 @@
 layout: post
 title: "Firefox OS phone"
 categories: blog
-excerpt: "А вы знаете, что за красивые глаза Mozilla может подарить вам телефон на Firefox OS? Мне подарила!"
+excerpt: "А вы знаете, что за красивые глаза Mozilla может подарить вам телефон на Firefox-OS? Мне подарила!"
 author: wonderbeat
 tags: [Firefox-OS]
 image:

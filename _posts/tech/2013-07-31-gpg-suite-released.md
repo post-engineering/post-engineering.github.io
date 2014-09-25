@@ -4,7 +4,7 @@ title: "GPG Tools Released"
 categories: blog
 excerpt: "На днях (27 июля), зарелизился GPG Suite."
 author: wonderbeat
-tags: [AngularJs, Firefox OS]
+tags: [AngularJs, Firefox-OS]
 image:
   feature: gpg/macgpg2-logo.png
 comments: true
