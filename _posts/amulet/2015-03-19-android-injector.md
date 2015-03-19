@@ -6,7 +6,7 @@ excerpt: "Возможно потому, что под Андроид нужно
 author: ratsam
 tags: [androgame]
 image:
-  feature: amulet/bg-injector.jpg
+  feature: amulet/bg-injector.png
 comments: true
 share: true
 ---
